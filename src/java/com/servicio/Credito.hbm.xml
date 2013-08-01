@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31-jul-2013 16:03:18 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.servicio.Credito" table="CREDITO" schema="ROOT">
+        <id name="id" type="string">
+            <column name="ID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="tipo" type="string">
+            <column name="TIPO" length="10" />
+        </property>
+        <property name="monto" type="java.lang.Long">
+            <column name="MONTO" precision="10" scale="0" />
+        </property>
+        <property name="interes" type="java.lang.Integer">
+            <column name="INTERES" precision="5" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
