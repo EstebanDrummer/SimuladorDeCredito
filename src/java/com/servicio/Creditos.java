@@ -40,7 +40,7 @@ public class Creditos {
     @GET
     public String libreinversion(@QueryParam("monto")long monto, @QueryParam("id")String id) {
         String cedula =id;
-        double re1 =0.05 * monto;
+        double re1 =0.07 * monto;
         int re = (int)re1;
         CreditoHelper creditohelper=new CreditoHelper();
         Credito credito = new Credito();
@@ -57,7 +57,7 @@ public class Creditos {
     @GET
     public String vehiculo(@QueryParam("monto")long monto, @QueryParam("id")String id) {
         String cedula =id;
-        double re1 =0.05 * monto;
+        double re1 =0.10 * monto;
         int re = (int)re1;
         CreditoHelper creditohelper=new CreditoHelper();
         Credito credito = new Credito();
